@@ -68,7 +68,7 @@ const initialiserSelects = useCallback(() => {
 
 useEffect(() => {
   initialiserSelects();
-}, [initialiserSelects]);
+}, []);
 
   // Verifies if the constructed phrase is correct
   const verifierPhrase = () => {
