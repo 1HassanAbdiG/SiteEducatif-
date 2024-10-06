@@ -4,7 +4,6 @@ import phrasesData from '../data/ConstructionPhrase.json';
 import ExerciseSummary from './Advice';
 import RecopyTask from './RecopyTask';
 import DictationTask from './DictationTask';
-//import FinalEvaluation from './FinalEvaluation';
 
 const PhraseBuilder = () => {
   // State variables for controlling phrases, feedback, and progress
@@ -15,7 +14,6 @@ const PhraseBuilder = () => {
   const [phrase, setPhrase] = useState('');
   const [correctPhrases, setCorrectPhrases] = useState([]);
   const [incorrectPhrases, setIncorrectPhrases] = useState([]);
-  const [attempts, setAttempts] = useState(0);
   const [progress, setProgress] = useState(0);
 
   // State for different stages of the game
@@ -25,15 +23,15 @@ const PhraseBuilder = () => {
   const [showFinalEvaluation, setShowFinalEvaluation] = useState(false);
 
   // Data arrays for subjects, verbs, and complements
-  const [subjects, setSubjects] = useState([
+  const [subjects] = useState([
     "Le chien", "Le cheval", "Le chat", "Maman", "Les enfants", "Nous", 
     "Vous", "Tu", "Mon frère", "Papa"
   ]);
-  const [verbs, setVerbs] = useState([
+  const [verbs] = useState([
     "aboie", "saute", "se cache", "coud", "dessinent", "planifions", 
     "jouez", "écris", "bricole", "lave"
   ]);
-  const [complements, setComplements] = useState([
+  const [complements] = useState([
     "contre les passants", "au-dessus des obstacles", "sous le lit", 
     "un vêtement pour l'hiver", "des animaux sur le tableau", 
     "nos vacances d'été", "au tennis sur le court", 
@@ -41,31 +39,25 @@ const PhraseBuilder = () => {
     "la voiture dans le garage"
   ]);
 
-
-
+  // State for shuffled options
+  const [shuffledSubjects, setShuffledSubjects] = useState([]);
+  const [shuffledVerbs, setShuffledVerbs] = useState([]);
+  const [shuffledComplements, setShuffledComplements] = useState([]);
 
   // Predefined correct phrases
   const correctPhrasesList = phrasesData.phrasesCorrectes;
-
-  // Shuffle sentence options on mount
-  useEffect(() => {
-    initialiserSelects();
-  }, []);
 
   // Function to shuffle an array
   const shuffleArray = (array) => {
     return [...array].sort(() => Math.random() - 0.5);
   };
 
-  // Function to reset and shuffle dropdown options
-  const initialiserSelects = () => {
-    setSujet('');
-    setVerbe('');
-    setComplement('');
-    setSubjects(shuffleArray(subjects));
-    setVerbs(shuffleArray(verbs));
-    setComplements(shuffleArray(complements));
-  };
+  // Shuffle sentence options on mount
+  useEffect(() => {
+    setShuffledSubjects(shuffleArray(subjects));
+    setShuffledVerbs(shuffleArray(verbs));
+    setShuffledComplements(shuffleArray(complements));
+  }, [subjects, verbs, complements]);
 
   // Verifies if the constructed phrase is correct
   const verifierPhrase = () => {
@@ -85,7 +77,6 @@ const PhraseBuilder = () => {
           setFeedback("Demandez à l'enseignant. 🤔");
           setIncorrectPhrases(prev => [...prev, constructedPhrase]);
         }
-        setAttempts(prev => prev + 1);
       }
 
       // Reset selections after verification
@@ -108,9 +99,11 @@ const PhraseBuilder = () => {
     setFeedback('');
     setCorrectPhrases([]);
     setIncorrectPhrases([]);
-    setAttempts(0);
     setProgress(0);
-    initialiserSelects();
+    // Shuffle options again when resetting the game
+    setShuffledSubjects(shuffleArray(subjects));
+    setShuffledVerbs(shuffleArray(verbs));
+    setShuffledComplements(shuffleArray(complements));
   };
 
   // Function to move between phases
@@ -144,7 +137,6 @@ const PhraseBuilder = () => {
       {showSummary && <ExerciseSummary onNext={handleNextStep} />}
       {showRecopy && <RecopyTask phrases={correctPhrases} onNext={handleDictation} incorrecPhase={incorrectPhrases} />}
       {showDictation && <DictationTask phrases={correctPhrases} onNext={handleFinalEvaluation} />}
-      
 
       {/* Show the phrase construction only if no other stages are active */}
       {!showSummary && !showRecopy && !showDictation && !showFinalEvaluation && (
@@ -157,21 +149,21 @@ const PhraseBuilder = () => {
           <div className={styles.container1}>
             <select onChange={(e) => setSujet(e.target.value)} value={sujet}>
               <option value="">Choisir un sujet</option>
-              {subjects.map((s) => (
+              {shuffledSubjects.map((s) => (
                 <option key={s} value={s}>{s}</option>
               ))}
             </select>
 
             <select onChange={(e) => setVerbe(e.target.value)} value={verbe}>
               <option value="">Choisir un verbe</option>
-              {verbs.map((v) => (
+              {shuffledVerbs.map((v) => (
                 <option key={v} value={v}>{v}</option>
               ))}
             </select>
 
             <select onChange={(e) => setComplement(e.target.value)} value={complement}>
               <option value="">Choisir un complément</option>
-              {complements.map((c) => (
+              {shuffledComplements.map((c) => (
                 <option key={c} value={c}>{c}</option>
               ))}
             </select>
