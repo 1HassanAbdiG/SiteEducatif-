@@ -85,7 +85,7 @@ const PhraseBuilder = () => {
       setComplement('');
 
       // Show recopy phase after 10 correct phrases
-      if (correctPhrases.length + 1 === 3) {
+      if (correctPhrases.length + 1 === 10) {
         setShowRecopy(true);
       }
     } else {
