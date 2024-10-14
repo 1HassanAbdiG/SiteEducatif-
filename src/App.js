@@ -5,6 +5,9 @@ import Footer from './components/footer';
 import JeuHistoire from './components/jeuHistoire';
 import PhraseBuilder from './components/PhraseBuilder';
 import MultiplicationGame from './components/Multi';
+import Sudoku from './components/sudoku';
+import Lecture from './components/lectrure/lecture';
+import Dictation from './components/dictée/Dictation';
 // Import other components...
 
 const App = () => {
@@ -20,6 +23,9 @@ const App = () => {
             <Route path="/histoire" element={<JeuHistoire />} />
             <Route path="/construction" element={<PhraseBuilder />} />
             <Route path="/multiplication" element={<MultiplicationGame />} />
+            <Route path="/sudoku" element={<Sudoku />} />
+            <Route path="/lecture" element={<Lecture />} />
+            <Route path="/dictée" element={<Dictation />} />
 
             
             

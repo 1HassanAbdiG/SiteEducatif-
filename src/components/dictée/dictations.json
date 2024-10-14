@@ -1,0 +1,160 @@
+{
+    "dictations": [
+      {
+        "id": 1,
+        "title": "Dictée 1",
+        "words": [
+          "Un mouton",
+          "Une pompe",
+          "Un pantalon",
+          "Un poisson",
+          "Un biberon",
+          "Un ballon",
+          "Rebondir",
+          "Bonjour",
+          "Un chaton",
+          "Une maison",
+          "Un papillon"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Dictée 2",
+        "words": [
+          "Un vendeur",
+          "Des écouteurs",
+          "Un chanteur",
+          "Heureux",
+          "Curieux",
+          "Des tracteurs",
+          "Une douleur",
+          "Des visiteurs",
+          "Ma soeur",
+          "Peureuse"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Dictée 3",
+        "words": [
+          "Un moteur",
+          "Un robot",
+          "Un chocolat",
+          "Un chapeau",
+          "Un cadeau",
+          "Un autobus",
+          "Un chameau",
+          "Un dinosaure",
+          "Des chaussettes",
+          "Un fauteuil"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Dictée 4",
+        "words": [
+          "Un aigle",
+          "Une chaîne",
+          "Un balai",
+          "Une chèvre",
+          "Une laine",
+          "Une fenêtre",
+          "Une baleine",
+          "Une flèche",
+          "L’argent",
+          "Le déjeuner"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Dictée 5",
+        "words": [
+          "La fatigue",
+          "Des bagages",
+          "La gorge",
+          "Une guitare",
+          "Des pingouins",
+          "Un champignon",
+          "Un peigne",
+          "Une araignée",
+          "Un peignoir",
+          "Une ligne"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Dictée 6",
+        "words": [
+          "Un agneau",
+          "Mignon",
+          "Une main",
+          "Éteindre",
+          "Du pain",
+          "La peinture",
+          "Le matin",
+          "Un train",
+          "Un singe",
+          "Un sapin"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Dictée 7",
+        "words": [
+          "le épouvantail",
+          "Un réveil",
+          "Une bouteille",
+          "Un fauteille",
+          "Une grenouille",
+          "Une feuille",
+          "Cueillur",
+          "De l'ail",
+          "Une bataille",
+          "Une échelle"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Dictée 8",
+        "words": [
+          "Un verre",
+          "Une maîtresse",
+          "Une assiette",
+          "Une couette",
+          "Le mien",
+          "La mienne",
+          "Une chienne",
+          "Un casque",
+          "Un cube",
+          "À côté"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Dictée 9",
+        "words": [
+          "Un coquelicot",
+          "Une équipe",
+          "Un pique-nique",
+          "Un koala",
+          "Qui-Que-Quoi",
+          "Un maçon",
+          "Un pinceau",
+          "Une centaine",
+          "Un cinéma",
+          "Un garçon"
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Dictée 10",
+        "words": [
+          "Un aperçu",
+          "Une cigale",
+          "Des vacances",
+          "Ceci-Cela"
+        ]
+      }
+    ]
+  }
+  

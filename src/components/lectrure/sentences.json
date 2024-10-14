@@ -1,0 +1,97 @@
+
+  {
+    "textes": { "LeRepas": [
+        {
+          "fr": "Maman lave les tomates.",
+          "en": "Mom washes the tomatoes.",
+          "showEnglish": false
+        },
+        {
+          "fr": "Mario lave la laitue et les légumes.",
+          "en": "Mario washes the lettuce and vegetables.",
+          "showEnglish": false
+        },
+        {
+          "fr": "Maman coupe les tomates et les légumes.",
+          "en": "Mom cuts the tomatoes and vegetables.",
+          "showEnglish": false
+        },
+        {
+          "fr": "Papa coupe le rôti.",
+          "en": "Dad cuts the roast.",
+          "showEnglish": false
+        },
+        {
+          "fr": "Valérie met la nappe et les plats sur la table.",
+          "en": "Valérie sets the table with the cloth and the dishes.",
+          "showEnglish": false
+        },
+        {
+          "fr": "Tout le monde mange.",
+          "en": "Everyone eats.",
+          "showEnglish": false
+        },
+        {
+          "fr": "C'est bon !",
+          "en": "It's good!",
+          "showEnglish": false
+        }
+      ],
+      "LaLecture": [
+        { "fr": "Dany a une lecture à faire.", "en": "Dany has some reading to do." },
+        { "fr": "Ce soir, il doit lire.", "en": "Tonight, he must read." },
+        { "fr": "Il doit lire tous les mots.", "en": "He must read all the words." },
+        { "fr": "Il doit lire tous les sons.", "en": "He must read all the sounds." },
+        { "fr": "Dany aime lire.", "en": "Dany loves to read." },
+        { "fr": "Dans son livre, il y a une fusée.", "en": "In his book, there is a rocket." },
+        { "fr": "La fusée se promène vers une planète.", "en": "The rocket is going toward a planet." },
+        { "fr": "Dany aime lire des aventures.", "en": "Dany loves to read adventures." }
+      ],
+      "Boubou": [
+        { "fr": "Boubou est un canari.", "en": "Boubou is a canary." },
+        { "fr": "Il est jaune.", "en": "He is yellow." },
+        { "fr": "Boubou aime bien sa cage.", "en": "Boubou likes his cage." },
+        { "fr": "Parfois, il peut sortir.", "en": "Sometimes, he can go out." },
+        { "fr": "Cathy aime Boubou.", "en": "Cathy loves Boubou." },
+        { "fr": "Sa grand-maman lui a donné Boubou.", "en": "Her grandmother gave her Boubou." },
+        { "fr": "Cathy lui donne des grains.", "en": "Cathy gives him seeds." },
+        { "fr": "Cathy aime entendre Boubou chanter.", "en": "Cathy loves to hear Boubou sing." }
+      ],
+      "MonChien": [
+        { "fr": "Mon chien se nomme Roko.", "en": "My dog is named Roko." },
+        { "fr": "Roko est noir avec des taches blanches.", "en": "Roko is black with white spots." },
+        { "fr": "Roko aime se cacher dans le panier de vêtements propres.", "en": "Roko loves hiding in the basket of clean clothes." },
+        { "fr": "Il mange de la nourriture pour chiens.", "en": "He eats dog food." },
+        { "fr": "Roko se couche sur le tapis de ma chambre.", "en": "Roko lies on the rug in my room." },
+        { "fr": "J'aime mon chien.", "en": "I love my dog." }
+      ],
+      "LaPoule": [
+        { "fr": "La poule est dans son nid.", "en": "The hen is in her nest." },
+        { "fr": "Elle se nomme Blanche.", "en": "Her name is Blanche." },
+        { "fr": "Blanche pond des œufs.", "en": "Blanche lays eggs." },
+        { "fr": "De bons œufs pour notre déjeuner.", "en": "Good eggs for our breakfast." },
+        { "fr": "Blanche est contente de se promener dans son enclos.", "en": "Blanche is happy to walk around her pen." },
+        { "fr": "Blanche mange des grains.", "en": "Blanche eats seeds." },
+        { "fr": "Blanche est ma poule préférée.", "en": "Blanche is my favorite hen." }
+      ],
+      "LeChat": [
+        { "fr": "Le chat Bingo aime se coucher près de la cage de Boubou.", "en": "The cat Bingo likes to lie near Boubou's cage." },
+        { "fr": "Bingo regarde le canari.", "en": "Bingo watches the canary." },
+        { "fr": "Boubou n'aime pas Bingo.", "en": "Boubou doesn't like Bingo." },
+        { "fr": "Boubou ne chante pas près du chat.", "en": "Boubou doesn't sing near the cat." },
+        { "fr": "Bingo pense que Boubou va sortir de sa cage.", "en": "Bingo thinks Boubou will come out of his cage." },
+        { "fr": "Boubou a peur.", "en": "Boubou is scared." },
+        { "fr": "Marie chasse Bingo et rassure Boubou.", "en": "Marie chases Bingo away and reassures Boubou." }
+      ],
+      "LePatin": [
+        { "fr": "Nicolas aime l'hiver.", "en": "Nicolas loves winter." },
+        { "fr": "Il met sa tuque rouge et son foulard bleu.", "en": "He puts on his red hat and blue scarf." },
+        { "fr": "Son manteau jaune et son pantalon bleu sont chauds.", "en": "His yellow coat and blue pants are warm." },
+        { "fr": "Il aime mettre ses patins bruns.", "en": "He loves putting on his brown skates." },
+        { "fr": "Il patine vite.", "en": "He skates fast." },
+        { "fr": "Nicolas aime patiner.", "en": "Nicolas loves skating." },
+        { "fr": "Nicolas aime l'hiver.", "en": "Nicolas loves winter." }
+      ]
+    }
+  }
+  
