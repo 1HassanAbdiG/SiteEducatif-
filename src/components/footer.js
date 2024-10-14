@@ -17,9 +17,9 @@ const Footer = () => {
         <div className={styles.column}>
           <h3 className={styles.heading}>Contact Information</h3>
           <ul className={styles.list}>
-            <li><FaEnvelope /> <a href="mailto:hassan.abdi@example.com">hassan.abdi@example.com</a></li>
-            <li><FaPhone /> +123-456-7890</li>
-            <li><FaMapMarkerAlt /> City, Country</li>
+            <li><FaEnvelope /> <a href="hassan.galeb@eibschool.ca">hassan.galeb@eibschool.ca</a></li>
+            <li><FaPhone /> +....-....-...</li>
+            <li><FaMapMarkerAlt /> Ottawa, Ontario</li>
           </ul>
         </div>
 
