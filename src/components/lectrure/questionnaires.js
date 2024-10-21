@@ -56,6 +56,15 @@ const Questionnaire = () => {
     loadTitles();
   }, []);
 
+  // When selected file changes, reset and load the corresponding data
+  useEffect(() => {
+    if (selectedFile) {
+      handleReset(); // Reset all answers and results
+      loadJsonData(selectedFile); // Load the new data
+    }
+  }, [selectedFile]);
+
+
   // Load selected JSON file dynamically
   const loadJsonData = async (fileName) => {
     setLoading(true);
@@ -291,7 +300,12 @@ const Questionnaire = () => {
           {/* Display results */}
           {score !== null && (
             <Box mt={4}>
-              <Typography variant="h6">Votre score : {score} sur {results.length}</Typography>
+              <Typography variant="h6">Votre score : {score} sur {results.length}
+
+              </Typography>
+              <Typography variant="subtitle1" color="red">
+                La partie que tu as rédigée, l'enseignant doit vérifier si c'est correct.
+              </Typography>
               <TableContainer component={Paper}>
                 <Table>
                   <TableHead>

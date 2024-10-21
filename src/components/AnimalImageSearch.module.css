@@ -1,0 +1,32 @@
+.container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px;
+  }
+  
+  .imageGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .image {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin: 10px;
+  }
+  
+  .error {
+    color: red;
+  }
+  

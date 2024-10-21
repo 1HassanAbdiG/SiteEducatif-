@@ -30,6 +30,8 @@ const Header = () => {
             <li><Link to="/multiplication">Jeu Multiplication</Link></li>
             <li><Link to="/construction">Jeu Construction de Phrases</Link></li>
             <li><Link to="/sudoku">Jeu Sudoku</Link></li>
+          
+            <li><Link to="/associe">associe</Link></li>
           </ul>
         </nav>
       </div>

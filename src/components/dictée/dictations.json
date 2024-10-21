@@ -1,21 +1,53 @@
 {
     "dictations": [
       {
-        "id": 1,
-        "title": "Dictée 1",
-        "words": [
-          "Un mouton",
-          "Une pompe",
-          "Un pantalon",
-          "Un poisson",
-          "Un biberon",
-          "Un ballon",
-          "Rebondir",
-          "Bonjour",
-          "Un chaton",
-          "Une maison",
-          "Un papillon"
-        ]
+        
+          "id": 1,
+          "title": "Caractères Masculins",
+          "words": [
+            "dynamique",
+            "gentil",
+            "poli",
+            "intelligent",
+            "calme",
+            "joyeux",
+            "timide",
+            "généreux",
+            "sincère",
+            "communicatif",
+            "bavard",
+            "talenteux",
+            "menteur",
+            "paresseux",
+            "discret",
+            "râleur",
+            "nerveux"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Caractères Féminins",
+          "words": [
+            "dynamique",
+            "gentille",
+            "polie",
+            "intelligente",
+            "calme",
+            "joyeuse",
+            "timide",
+            "généreuse",
+            "sincère",
+            "communicative",
+            "bavarde",
+            "talenteuse",
+            "menteuse",
+            "paresseuse",
+            "discrète",
+            "râleuse",
+            "nerveuse"
+          ]
+      
+        
       },
       {
         "id": 2,

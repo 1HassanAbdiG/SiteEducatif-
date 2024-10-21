@@ -91,7 +91,44 @@
         { "fr": "Il patine vite.", "en": "He skates fast." },
         { "fr": "Nicolas aime patiner.", "en": "Nicolas loves skating." },
         { "fr": "Nicolas aime l'hiver.", "en": "Nicolas loves winter." }
-      ]
+      ],"LesAteliers": [
+    { "fr": "Dans notre classe, nous avons des ateliers.", "en": "In our class, we have workshops." },
+    { "fr": "Dans notre atelier, nous jouons à des jeux éducatifs.", "en": "In our workshop, we play educational games." },
+    { "fr": "Valérie joue au domino des mots avec Simon.", "en": "Valérie plays word dominoes with Simon." },
+    { "fr": "Caroline s'amuse à chercher des mots avec Mathieu.", "en": "Caroline has fun searching for words with Mathieu." },
+    { "fr": "Josée aime lire des histoires drôles.", "en": "Josée enjoys reading funny stories." },
+    { "fr": "Dans notre classe, tout le monde s'amuse.", "en": "In our class, everyone is having fun." }
+],"AlaFerme": [
+    { "fr": "Dans la ferme d'oncle Noé, il y a beaucoup d'animaux.", "en": "In Uncle Noé's farm, there are many animals." },
+    { "fr": "Il y a deux poules, un coq et trois poussins.", "en": "There are two hens, a rooster, and three chicks." },
+    { "fr": "Il y a trois moutons, une vache et trois canards.", "en": "There are three sheep, a cow, and three ducks." },
+    { "fr": "Oncle Noé aime beaucoup ses animaux.", "en": "Uncle Noé loves his animals very much." },
+    { "fr": "Il leur donne des granulés et de l'herbe fraîche.", "en": "He gives them pellets and fresh grass." }
+],"LeJudo": [
+    { "fr": "C'est samedi.", "en": "It's Saturday." },
+    { "fr": "Émilie et Félix font du judo.", "en": "Émilie and Félix practice judo." },
+    { "fr": "Émilie est une judoka.", "en": "Émilie is a judoka." },
+    { "fr": "Félix est un judoka.", "en": "Félix is a judoka." },
+    { "fr": "Le dojo est la salle de judo.", "en": "The dojo is the judo hall." },
+    { "fr": "Émilie doit écouter.", "en": "Émilie must listen." },
+    { "fr": "Félix doit suivre les consignes.", "en": "Félix must follow the instructions." },
+    { "fr": "Émilie et Félix ont une ceinture jaune.", "en": "Émilie and Félix have a yellow belt." },
+    { "fr": "Émilie a fait tomber Félix.", "en": "Émilie knocked Félix down." },
+    { "fr": "Félix est tombé sur un matelas.", "en": "Félix fell on a mat." },
+    { "fr": "Il y a beaucoup de règles de sécurité.", "en": "There are many safety rules." },
+    { "fr": "Émilie et Félix s'amusent beaucoup.", "en": "Émilie and Félix have a lot of fun." }
+],"LaSoupe": [
+    { "fr": "Papa a décidé de faire sa fameuse soupe aux légumes.", "en": "Dad decided to make his famous vegetable soup." },
+    { "fr": "Mélanie lave les carottes et le céleri.", "en": "Mélanie washes the carrots and celery." },
+    { "fr": "Dans le bouillon de poulet, Rémi ajoute des morceaux de poireaux.", "en": "In the chicken broth, Rémi adds pieces of leeks." },
+    { "fr": "Papa ajoute une boîte de tomates coupées en dés.", "en": "Dad adds a can of diced tomatoes." },
+    { "fr": "Papa, Mélanie et Rémi regardent la soupe qui mijote.", "en": "Dad, Mélanie, and Rémi watch the soup simmer." },
+    { "fr": "Toute la famille s'en régalera pour le dîner.", "en": "The whole family will enjoy it for dinner." }
+]
+
+
+
+
     }
   }
   

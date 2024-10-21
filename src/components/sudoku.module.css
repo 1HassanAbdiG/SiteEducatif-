@@ -8,6 +8,11 @@
     max-width: 100vw;
     overflow-x: hidden;
   }
+  .number {
+    color: blue; /* Change to your desired color */
+    font-weight: bold; /* Optional: make the numbers bold */
+  }
+  
   
   h1, h2 {
     color: #333;

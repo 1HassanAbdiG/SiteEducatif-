@@ -1,0 +1,425 @@
+{
+    "QCM": {
+      "Partie 1": {
+        "Titre": "Facteurs",
+        "Questions": [
+          {
+            "Question": "Quels sont les facteurs de 18 ?",
+            "Options": [
+              "1, 2, 3, 6, 9, 18",
+              "1, 3, 9, 18",
+              "2, 6, 12",
+              "1, 2, 6, 9"
+            ],
+            "CorrectAnswer": "1, 2, 3, 6, 9, 18"
+          },
+          {
+            "Question": "Quels sont les facteurs de 36 ?",
+            "Options": [
+              "1, 2, 3, 6, 12, 18, 36",
+              "1, 2, 3, 6, 9, 12, 18, 36",
+              "1, 2, 3, 6, 9, 36",
+              "2, 6, 18, 36"
+            ],
+            "CorrectAnswer": "1, 2, 3, 6, 9, 12, 18, 36"
+          },
+          {
+            "Question": "Les facteurs de 45 sont :",
+            "Options": [
+              "1, 3, 5, 9, 15, 45",
+              "1, 5, 9, 45",
+              "3, 5, 15, 45",
+              "1, 5, 9, 45"
+            ],
+            "CorrectAnswer": "1, 3, 5, 9, 15, 45"
+          },
+          {
+            "Question": "Trouvez les facteurs de 27 :",
+            "Options": [
+              "1, 3, 9, 27",
+              "1, 2, 3, 9",
+              "1, 3, 6, 9",
+              "1, 3, 6, 27"
+            ],
+            "CorrectAnswer": "1, 3, 9, 27"
+          },
+          {
+            "Question": "Quels sont les facteurs de 24 ?",
+            "Options": [
+              "1, 2, 3, 4, 6, 8, 12, 24",
+              "1, 2, 3, 6, 12, 24",
+              "2, 4, 6, 12",
+              "1, 2, 3, 4, 6, 12, 24"
+            ],
+            "CorrectAnswer": "1, 2, 3, 4, 6, 8, 12, 24"
+          },
+          {
+            "Question": "Les facteurs de 50 sont :",
+            "Options": [
+              "1, 2, 5, 10, 25, 50",
+              "1, 2, 5, 25",
+              "2, 5, 10, 50",
+              "1, 5, 10, 25"
+            ],
+            "CorrectAnswer": "1, 2, 5, 10, 25, 50"
+          },
+          {
+            "Question": "Les facteurs de 12 sont :",
+            "Options": [
+              "1, 2, 3, 4, 6, 12",
+              "1, 2, 4, 12",
+              "1, 3, 6, 12",
+              "2, 6, 12"
+            ],
+            "CorrectAnswer": "1, 2, 3, 4, 6, 12"
+          },
+          {
+            "Question": "Trouvez les facteurs de 20 :",
+            "Options": [
+              "1, 2, 4, 5, 10, 20",
+              "1, 5, 10, 20",
+              "2, 4, 5, 20",
+              "1, 4, 5, 20"
+            ],
+            "CorrectAnswer": "1, 2, 4, 5, 10, 20"
+          },
+          {
+            "Question": "Les facteurs de 40 sont :",
+            "Options": [
+              "1, 2, 4, 5, 8, 10, 20, 40",
+              "1, 5, 10, 20, 40",
+              "2, 4, 10, 20, 40",
+              "1, 2, 4, 8, 10, 20, 40"
+            ],
+            "CorrectAnswer": "1, 2, 4, 5, 8, 10, 20, 40"
+          },
+          {
+            "Question": "Trouvez les facteurs de 15 :",
+            "Options": [
+              "1, 3, 5, 15",
+              "1, 5, 15",
+              "3, 5, 15",
+              "1, 3, 15"
+            ],
+            "CorrectAnswer": "1, 3, 5, 15"
+          }
+        ]
+      },
+      "Partie 2": {
+        "Titre": "PGCD",
+        "Questions": [
+          {
+            "Question": "Quel est le PGCD de 24 et 36 ?",
+            "Options": [
+              "6",
+              "12",
+              "18",
+              "24"
+            ],
+            "CorrectAnswer": "12"
+          },
+          {
+            "Question": "Quel est le PGCD de 48 et 64 ?",
+            "Options": [
+              "8",
+              "16",
+              "24",
+              "32"
+            ],
+            "CorrectAnswer": "16"
+          },
+          {
+            "Question": "Le PGCD de 18 et 27 est :",
+            "Options": [
+              "3",
+              "9",
+              "6",
+              "18"
+            ],
+            "CorrectAnswer": "9"
+          },
+          {
+            "Question": "Le PGCD de 35 et 50 est :",
+            "Options": [
+              "5",
+              "10",
+              "15",
+              "35"
+            ],
+            "CorrectAnswer": "5"
+          },
+          {
+            "Question": "Quel est le PGCD de 16 et 40 ?",
+            "Options": [
+              "4",
+              "8",
+              "16",
+              "20"
+            ],
+            "CorrectAnswer": "8"
+          },
+          {
+            "Question": "Le PGCD de 21 et 14 est :",
+            "Options": [
+              "7",
+              "14",
+              "21",
+              "28"
+            ],
+            "CorrectAnswer": "7"
+          },
+          {
+            "Question": "Le PGCD de 9 et 12 est :",
+            "Options": [
+              "1",
+              "3",
+              "9",
+              "12"
+            ],
+            "CorrectAnswer": "3"
+          },
+          {
+            "Question": "Quel est le PGCD de 54 et 81 ?",
+            "Options": [
+              "9",
+              "27",
+              "54",
+              "81"
+            ],
+            "CorrectAnswer": "27"
+          },
+          {
+            "Question": "Le PGCD de 30 et 45 est :",
+            "Options": [
+              "5",
+              "15",
+              "25",
+              "45"
+            ],
+            "CorrectAnswer": "15"
+          },
+          {
+            "Question": "Quel est le PGCD de 28 et 42 ?",
+            "Options": [
+              "7",
+              "14",
+              "21",
+              "28"
+            ],
+            "CorrectAnswer": "14"
+          }
+        ]
+      },
+      "Partie 3": {
+        "Titre": "PPCM",
+        "Questions": [
+          {
+            "Question": "Quel est le PPCM de 4 et 5 ?",
+            "Options": [
+              "10",
+              "15",
+              "20",
+              "25"
+            ],
+            "CorrectAnswer": "20"
+          },
+          {
+            "Question": "Quel est le PPCM de 12 et 18 ?",
+            "Options": [
+              "24",
+              "36",
+              "48",
+              "54"
+            ],
+            "CorrectAnswer": "36"
+          },
+          {
+            "Question": "Le PPCM de 8 et 12 est :",
+            "Options": [
+              "12",
+              "16",
+              "24",
+              "32"
+            ],
+            "CorrectAnswer": "24"
+          },
+          {
+            "Question": "Le PPCM de 9 et 15 est :",
+            "Options": [
+              "30",
+              "45",
+              "60",
+              "90"
+            ],
+            "CorrectAnswer": "30"
+          },
+          {
+            "Question": "Quel est le PPCM de 6 et 8 ?",
+            "Options": [
+              "12",
+              "18",
+              "24",
+              "36"
+            ],
+            "CorrectAnswer": "24"
+          },
+          {
+            "Question": "Le PPCM de 10 et 15 est :",
+            "Options": [
+              "30",
+              "45",
+              "60",
+              "75"
+            ],
+            "CorrectAnswer": "30"
+          },
+          {
+            "Question": "Quel est le PPCM de 5 et 10 ?",
+            "Options": [
+              "5",
+              "10",
+              "15",
+              "20"
+            ],
+            "CorrectAnswer": "10"
+          },
+          {
+            "Question": "Le PPCM de 14 et 21 est :",
+            "Options": [
+              "42",
+              "56",
+              "63",
+              "70"
+            ],
+            "CorrectAnswer": "42"
+          },
+          {
+            "Question": "Quel est le PPCM de 3 et 7 ?",
+            "Options": [
+              "14",
+              "21",
+              "28",
+              "35"
+            ],
+            "CorrectAnswer": "21"
+          },
+          {
+            "Question": "Le PPCM de 15 et 25 est :",
+            "Options": [
+              "50",
+              "75",
+              "100",
+              "125"
+            ],
+            "CorrectAnswer": "75"
+          }
+        ]
+      },
+      "Partie 4": {
+        "Titre": "Décomposition en facteurs premiers",
+        "Questions": [
+          {
+            "Question": "Décomposez 30 en facteurs premiers :",
+            "Options": [
+              "2 × 3 × 5",
+              "3 × 10",
+              "5 × 6",
+              "2 × 15"
+            ],
+            "CorrectAnswer": "2 × 3 × 5"
+          },
+          {
+            "Question": "Décomposez 18 en facteurs premiers :",
+            "Options": [
+              "2 × 3 × 3",
+              "3 × 6",
+              "2 × 9",
+              "1 × 18"
+            ],
+            "CorrectAnswer": "2 × 3 × 3"
+          },
+          {
+            "Question": "Décomposez 42 en facteurs premiers :",
+            "Options": [
+              "2 × 3 × 7",
+              "6 × 7",
+              "3 × 14",
+              "2 × 21"
+            ],
+            "CorrectAnswer": "2 × 3 × 7"
+          },
+          {
+            "Question": "Décomposez 24 en facteurs premiers :",
+            "Options": [
+              "2 × 2 × 2 × 3",
+              "4 × 6",
+              "2 × 12",
+              "3 × 8"
+            ],
+            "CorrectAnswer": "2 × 2 × 2 × 3"
+          },
+          {
+            "Question": "Décomposez 60 en facteurs premiers :",
+            "Options": [
+              "2 × 2 × 3 × 5",
+              "3 × 20",
+              "2 × 30",
+              "4 × 15"
+            ],
+            "CorrectAnswer": "2 × 2 × 3 × 5"
+          },
+          {
+            "Question": "Décomposez 28 en facteurs premiers :",
+            "Options": [
+              "2 × 2 × 7",
+              "2 × 4 × 7",
+              "4 × 7",
+              "2 × 14"
+            ],
+            "CorrectAnswer": "2 × 2 × 7"
+          },
+          {
+            "Question": "Décomposez 36 en facteurs premiers :",
+            "Options": [
+              "2 × 2 × 3 × 3",
+              "6 × 6",
+              "3 × 12",
+              "4 × 9"
+            ],
+            "CorrectAnswer": "2 × 2 × 3 × 3"
+          },
+          {
+            "Question": "Décomposez 70 en facteurs premiers :",
+            "Options": [
+              "2 × 5 × 7",
+              "10 × 7",
+              "5 × 14",
+              "2 × 35"
+            ],
+            "CorrectAnswer": "2 × 5 × 7"
+          },
+          {
+            "Question": "Décomposez 90 en facteurs premiers :",
+            "Options": [
+              "2 × 3 × 3 × 5",
+              "3 × 30",
+              "10 × 9",
+              "2 × 45"
+            ],
+            "CorrectAnswer": "2 × 3 × 3 × 5"
+          },
+          {
+            "Question": "Décomposez 100 en facteurs premiers :",
+            "Options": [
+              "2 × 2 × 5 × 5",
+              "10 × 10",
+              "4 × 25",
+              "2 × 50"
+            ],
+            "CorrectAnswer": "2 × 2 × 5 × 5"
+          }
+        ]
+      }
+    }
+  }
+  

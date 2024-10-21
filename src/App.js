@@ -8,7 +8,10 @@ import MultiplicationGame from './components/Multi';
 import Sudoku from './components/sudoku';
 import Lecture from './components/lectrure/lecture';
 import Dictation from './components/dictée/Dictation';
-// Import other components...
+import Game from './components/game';
+
+
+
 
 const App = () => {
   return (
@@ -19,6 +22,7 @@ const App = () => {
         
         {/* Main content area */}
         <div className="main-content">
+          
           <Routes>
             <Route path="/histoire" element={<JeuHistoire />} />
             <Route path="/construction" element={<PhraseBuilder />} />
@@ -26,9 +30,8 @@ const App = () => {
             <Route path="/sudoku" element={<Sudoku />} />
             <Route path="/lecture" element={<Lecture />} />
             <Route path="/dictée" element={<Dictation />} />
-
-            
-            
+            <Route path="/associe" element={<Game />} />
+         
             {/* Add more routes here */}
           </Routes>
         </div>

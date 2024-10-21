@@ -2,10 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import styles from './PhraseReconstruction.module.css';
 
 const PhraseReconstruction = () => {
-    const [phrases, setPhrases] = useState([]); // Store phrase objects
+    const [phrases, setPhrases] = useState([]);
     const [selectedText, setSelectedText] = useState([]);
     const [loading, setLoading] = useState(true);
     const constructionAreaRefs = useRef([]);
+    const [startTime, setStartTime] = useState(null); // To track start time
+    const [endTime, setEndTime] = useState(null); // To track end time
+    const [totalTime, setTotalTime] = useState(''); // To store calculated time
 
     const requireJsonFiles = require.context('./datalecture', false, /\.json$/);
 
@@ -13,7 +16,7 @@ const PhraseReconstruction = () => {
         const loadPhrases = () => {
             const jsonFiles = requireJsonFiles.keys().map(requireJsonFiles);
             const allPhrases = jsonFiles.map(json => ({
-                title: json.text.title, // Extract the title
+                title: json.text.title,
                 content: json.text.content,
             }));
             setPhrases(allPhrases);
@@ -21,8 +24,7 @@ const PhraseReconstruction = () => {
         };
     
         loadPhrases();
-    }, [requireJsonFiles]); // Add requireJsonFiles here
-    
+    }, [requireJsonFiles]);
 
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
@@ -32,8 +34,11 @@ const PhraseReconstruction = () => {
     };
 
     const handleSelectText = (index) => {
-        setSelectedText(phrases[index].content); // Set the content of the selected text
+        setSelectedText(phrases[index].content);
         constructionAreaRefs.current = Array(phrases[index].content.length).fill().map(() => React.createRef());
+        setStartTime(Date.now()); // Start the timer when text is selected
+        setEndTime(null); // Reset end time on new selection
+        setTotalTime(''); // Reset displayed time on new selection
     };
 
     const createPhraseArea = (phrase, index) => {
@@ -89,26 +94,31 @@ const PhraseReconstruction = () => {
     };
 
     const checkAllPhrases = () => {
-        // Loop through each ref in the constructionAreaRefs
         constructionAreaRefs.current.forEach((ref, index) => {
-            // Ensure the ref exists and has a current value (the DOM element)
             if (ref.current && phrases[index] && phrases[index].content) {
                 const constructionArea = ref.current;
-               // const message = constructionArea.nextElementSibling; //MODIFIER POUR LE BOUILD
-
-                // Ensure phrases[index].content is an array before joining it
                 const phraseContent = Array.isArray(phrases[index].content)
                     ? phrases[index].content.join(' ')
                     : '';
 
-                // Check the phrase (assuming checkPhrase is a function that exists)
                 checkPhrase(phraseContent, constructionArea);
-            } else {
-                console.warn(`Phrase or ref at index ${index} is missing.`);
             }
         });
+
+        setEndTime(Date.now()); // Record the end time when checking all phrases
+        calculateTotalTime(); // Calculate the total time after verification
     };
 
+    const calculateTotalTime = () => {
+        if (!endTime || !startTime) {
+            setTotalTime("Temps indisponible");
+        } else {
+            const timeTaken = endTime - startTime;
+            const minutes = Math.floor(timeTaken / 60000);
+            const seconds = Math.floor((timeTaken % 60000) / 1000);
+            setTotalTime(`${minutes} minute(s) et ${seconds} seconde(s)`);
+        }
+    };
 
     const readAllPhrases = () => {
         const constructedPhrases = constructionAreaRefs.current.map(ref => {
@@ -117,18 +127,20 @@ const PhraseReconstruction = () => {
                     .map(word => word.textContent)
                     .join(' ');
             }
-            return ''; // Return an empty string if ref is not available
+            return '';
         })
-            .filter(phrase => phrase.length > 0) // Filter out empty phrases
-            .join('. '); // Join phrases with a period
+            .filter(phrase => phrase.length > 0)
+            .join('. ');
 
-        const utterance = new SpeechSynthesisUtterance(constructedPhrases); // Create the utterance
-        utterance.lang = 'fr-FR'; // Set the language for the utterance
-        speechSynthesis.speak(utterance); // Speak the utterance
+        const utterance = new SpeechSynthesisUtterance(constructedPhrases);
+        utterance.lang = 'fr-FR';
+        speechSynthesis.speak(utterance);
     };
 
     const initializeGame = () => {
         setSelectedText([]);
+        setStartTime(null); // Reset the timer
+        setTotalTime(''); // Clear the time display
     };
 
     if (loading) return <div>Loading...</div>;
@@ -151,7 +163,7 @@ const PhraseReconstruction = () => {
                     <option value="" disabled selected>Sélectionner un texte</option>
                     {phrases.map((phraseGroup, index) => (
                         <option key={index} value={index}>
-                            {phraseGroup.title} {/* Display the title here */}
+                            {phraseGroup.title}
                         </option>
                     ))}
                 </select>
@@ -162,6 +174,7 @@ const PhraseReconstruction = () => {
                 <button className={styles.actionButton} onClick={readAllPhrases}>Lire Tout</button>
                 <button className={styles.actionButton} onClick={initializeGame}>Recommencer</button>
             </div>
+            {totalTime && <p className={styles.timeDisplay}>Temps écoulé : {totalTime}</p>} {/* Display total time */}
         </div>
     );
 };

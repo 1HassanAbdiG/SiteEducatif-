@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'; // Import useCallback
+import React, { useState, useEffect, useCallback } from 'react';
 import styles from './sudoku.module.css'; // Import du module CSS
 
 const Sudoku = () => {
@@ -8,20 +8,18 @@ const Sudoku = () => {
   const [selectedCell, setSelectedCell] = useState(null);
   const [completedSudokus, setCompletedSudokus] = useState([]);
   const [difficulty, setDifficulty] = useState('basic');
-  const [message, setMessage] = useState(''); // Pour afficher les messages
+  const [message, setMessage] = useState('');
 
-  // Define startNewGame with useCallback to memoize it
   const startNewGame = useCallback(() => {
     const grid = generateSudoku(difficulty);
-    // Initialize grid with objects having `value` and `incorrect` properties
-    setCurrentGrid(grid.map(row => row.map(cell => ({ value: cell, incorrect: false }))));
+    setCurrentGrid(grid.map(row => row.map(cell => ({ value: cell, isGiven: cell !== 0 }))));
     setHistory([]);
-    setMessage(''); // Réinitialiser le message
-  }, [difficulty]); // Include difficulty in the dependencies
+    setMessage('');
+  }, [difficulty]);
 
   useEffect(() => {
     startNewGame();
-  }, [difficulty, startNewGame]); // Add startNewGame as a dependency
+  }, [difficulty, startNewGame]);
 
   const generateSudoku = (difficulty) => {
     const size = difficulty === 'basic' ? 4 : 9;
@@ -64,7 +62,7 @@ const Sudoku = () => {
     };
 
     solve();
-    setSolution(grid.map(row => [...row])); // Store the solution
+    setSolution(grid.map(row => [...row]));
 
     const numToRemove = {
       basic: 8,
@@ -89,10 +87,10 @@ const Sudoku = () => {
       row.map((cell, j) => (
         <div
           key={`${i}-${j}`}
-          className={`${styles.cell} ${cell.incorrect ? styles.incorrect : ''} ${cell.given ? styles.given : ''}`}
+          className={`${styles.cell} ${cell.incorrect ? styles.incorrect : ''} ${cell.isGiven ? styles.given : ''}`}
           onClick={() => selectCell(i, j)}
         >
-          {cell.value !== 0 ? cell.value : ''}
+          <span className={styles.number}>{cell.value !== 0 ? cell.value : ''}</span>
         </div>
       ))
     );
@@ -118,22 +116,26 @@ const Sudoku = () => {
     if (selectedCell) {
       const { row, col } = selectedCell;
       const newGrid = [...currentGrid];
-      const oldValue = newGrid[row][col]; // Store the old value for history
-      newGrid[row][col] = { value: num === 0 ? 0 : num, incorrect: false }; // Update cell value
-      setCurrentGrid(newGrid);
-      setHistory([...history, { row, col, oldValue }]); // Update history
+
+      // Allow modification only if the cell is incorrect or empty
+      if (!newGrid[row][col].isGiven) {
+        const oldValue = newGrid[row][col]; // Store the old value for history
+        newGrid[row][col] = { value: num === 0 ? 0 : num, isGiven: false }; // Update cell value
+        setCurrentGrid(newGrid);
+        setHistory([...history, { row, col, oldValue }]); // Update history
+      }
     }
   };
 
   const checkSolution = () => {
-    const updatedGrid = currentGrid.map((row, i) => 
+    const updatedGrid = currentGrid.map((row, i) =>
       row.map((cell, j) => {
         const isCorrect = cell.value === solution[i][j];
         return { ...cell, incorrect: !isCorrect }; // Mark as incorrect if not matching
       })
     );
 
-    setCurrentGrid(updatedGrid); 
+    setCurrentGrid(updatedGrid);
 
     // Check if the entire grid is correct
     if (updatedGrid.every((row, i) => row.every((cell, j) => cell.value === solution[i][j]))) {
